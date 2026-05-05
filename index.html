@@ -1,81 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Triptolemus - Coming Soon</title>
-
-<style>
-    body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: radial-gradient(circle at center, #0a0f1f, #05060a);
-        font-family: Arial, sans-serif;
-        color: white;
-        overflow: hidden;
-    }
-
-    .container {
-        text-align: center;
-        animation: fadeIn 1.5s ease-in-out;
-    }
-
-    .title {
-        font-size: 60px;
-        font-weight: bold;
-        letter-spacing: 3px;
-    }
-
-    .subtitle {
-        margin-top: 10px;
-        font-size: 16px;
-        opacity: 0.7;
-        letter-spacing: 5px;
-    }
-
-    .coming {
-        margin-top: 30px;
-        font-size: 20px;
-        letter-spacing: 8px;
-        opacity: 0.9;
-        animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-        0%, 100% { opacity: 0.4; transform: scale(1); }
-        50% { opacity: 1; transform: scale(1.05); }
-    }
-
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* subtle glow */
-    .glow {
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        background: radial-gradient(circle, rgba(0,255,255,0.08), transparent 70%);
-        border-radius: 50%;
-        filter: blur(40px);
-        z-index: -1;
-    }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triptolemus | Coming Soon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gradient-to-br from-green-900 via-green-800 to-green-950 text-white min-h-screen flex flex-col">
 
-<body>
+  <!-- Header -->
+  <header class="text-center py-10 bg-[#1f1f1f]">
+    <img id="logo" src="logo.png" class="mx-auto w-40 md:w-56 mb-6 rounded-xl drop-shadow-[0_0_25px_rgba(0,255,120,0.7)] animate-bounce-slow transition-transform duration-200 will-change-transform" alt="Higgsfield Logo">
+    <h1 class="text-4xl md:text-6xl font-bold bg-gradient-to-r from-gray-300 to-green-400 bg-clip-text text-transparent">Triptolemus</h1>
+    <p class="mt-2 text-green-300 text-lg">Effortless Growth. Fully Automated.</p>
+  </header>
 
-<div class="glow"></div>
+  <!-- Coming Soon -->
+  <section class="text-center px-6">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4">🚀 Coming Soon</h2>
+    <p class="text-green-200 max-w-xl mx-auto">An AI-powered, solar-driven system that takes care of your plants automatically.</p>
+  </section>
 
-<div class="container">
-    <div class="title">TRIPTOLEMUS</div>
-    <div class="subtitle">HIGGS FIELD DIVISION</div>
-    <div class="coming">COMING SOON</div>
-</div>
+  <!-- Email Subscription -->
+  <section class="mt-10 px-6">
+    <div class="max-w-md mx-auto bg-green-900/50 backdrop-blur p-6 rounded-2xl shadow-lg">
+      <h3 class="text-xl font-semibold mb-4 text-center">Get Early Access</h3>
+      <form class="flex flex-col gap-3">
+        <input type="email" placeholder="Enter your email" class="p-3 rounded-lg bg-green-800 text-white placeholder-green-300 focus:outline-none">
+        <button class="bg-green-400 text-black font-semibold py-2 rounded-lg hover:bg-green-300 transition">Notify Me</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="mt-14 px-6 max-w-3xl mx-auto">
+    <h2 class="text-2xl font-bold mb-3 text-green-300">Our Story</h2>
+    <p class="text-green-200">I am <strong>[YOUR NAME]</strong>, a Class <strong>[YOUR CLASS]</strong> student of <strong>[YOUR SCHOOL, CITY]</strong>. Triptolemus started as an idea to automate plant care and make growing plants effortless using technology.</p>
+  </section>
+
+  <!-- How It Works -->
+  <section class="mt-10 px-6 max-w-3xl mx-auto">
+    <h2 class="text-2xl font-bold mb-3 text-green-300">How It Works</h2>
+    <ul class="text-green-200 list-disc list-inside space-y-2">
+      <li>Monitors plant conditions using sensors</li>
+      <li>Analyzes data in real time</li>
+      <li>Automatically waters and maintains the plant</li>
+      <li>Runs on solar power for efficiency</li>
+    </ul>
+  </section>
+
+  <!-- Additional Features -->
+  <section class="mt-10 px-6 max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6 text-green-300 text-center">Additional Features</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-green-900/50 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-semibold mb-2">🌱 Name Your Plant</h3>
+        <p class="text-green-200">Personalize your experience by naming your plant. Turn plant care into something more engaging and meaningful.</p>
+      </div>
+      <div class="bg-green-900/50 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-semibold mb-2">🎒 Lightweight & Portable</h3>
+        <p class="text-green-200">Compact and easy to carry, Triptolemus can be placed anywhere—your desk, room, or workspace.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="mt-10 px-6 text-center">
+    <h2 class="text-2xl font-bold mb-4 text-green-300">Contact</h2>
+    <a href="mailto:youremail@example.com" class="bg-green-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-300 transition">Contact Us</a>
+    <p class="text-sm text-green-400 mt-2">(Check with parents before adding your email)</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-auto text-center py-6 text-green-500 text-sm">
+    Higgsfield — We Give Imagination Mass
+  </footer>
+
+  <!-- Higgsfield Energy Effect -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute w-[500px] h-[500px] bg-green-400 opacity-20 rounded-full blur-3xl animate-float1"></div>
+    <div class="absolute w-[400px] h-[400px] bg-green-300 opacity-20 rounded-full blur-3xl animate-float2"></div>
+    <div class="absolute w-[600px] h-[600px] bg-green-500 opacity-10 rounded-full blur-3xl animate-float3"></div>
+  </div>
+
+  <style>
+    @keyframes float1 {
+      0% { transform: translate(-10%, -10%) scale(1); }
+      50% { transform: translate(60%, 20%) scale(1.2); }
+      100% { transform: translate(-10%, -10%) scale(1); }
+    }
+
+    @keyframes float2 {
+      0% { transform: translate(80%, 10%) scale(1); }
+      50% { transform: translate(20%, 60%) scale(1.3); }
+      100% { transform: translate(80%, 10%) scale(1); }
+    }
+
+    @keyframes float3 {
+      0% { transform: translate(30%, 80%) scale(1); }
+      50% { transform: translate(70%, 30%) scale(1.4); }
+      100% { transform: translate(30%, 80%) scale(1); }
+    }
+
+    .animate-float1 { animation: float1 18s ease-in-out infinite; }
+    .animate-float2 { animation: float2 22s ease-in-out infinite; }
+    .animate-float3 { animation: float3 26s ease-in-out infinite; }
+  
+    @keyframes bounceSlow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .animate-bounce-slow {
+      animation: bounceSlow 3s ease-in-out infinite;
+    }
+
+  </style>
+
+  <script>
+    const logo = document.getElementById('logo');
+
+    document.addEventListener('mousemove', (e) => {
+      const rect = logo.getBoundingClientRect();
+      const logoX = rect.left + rect.width / 2;
+      const logoY = rect.top + rect.height / 2;
+
+      const deltaX = (e.clientX - logoX) / 20;
+      const deltaY = (e.clientY - logoY) / 20;
+
+      logo.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+    });
+
+    document.addEventListener('mouseleave', () => {
+      logo.style.transform = 'translate(0, 0)';
+    });
+  </script>
 
 </body>
 </html>
